@@ -1,5 +1,7 @@
 ### This script will fix and improve Ubuntu 24.04 LTS and distros based on it 
 
+### How to run Script ? >> RUN >>  ``` bash ubuntu24-fix.sh ```
+
 ### Simply run the script , and wait until its done , REBOOT and ENJOY
 
 # Script installs the following :
