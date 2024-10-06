@@ -18,12 +18,18 @@ clear
 # Prompt user for GPU driver preference
 read -p "Which GPU driver to use? Type 'nvidia' or 'mesa': " gpu_driver
 
+# Make sure Secure Boot is off otherwise you will get this error message below :
+# NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. 
+# Make sure that the latest NVIDIA driver is installed and running.
+
+# Now using Latest 560 drivers instead of 555
+
 if [ "$gpu_driver" == "nvidia" ]; then
     clear
     echo "Installing the latest Nvidia drivers..."
     sudo add-apt-repository ppa:graphics-drivers/ppa 
     sudo apt update
-    sudo apt install -y nvidia-driver-555 libvulkan1 libvulkan1:i386
+    sudo apt install -y nvidia-driver-560 libvulkan1 libvulkan1:i386
 elif [ "$gpu_driver" == "mesa" ]; then
     clear
     echo "Installing the latest Mesa drivers..."
