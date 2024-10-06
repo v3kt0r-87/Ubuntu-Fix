@@ -64,6 +64,7 @@ if [ "$device_type" == "laptop" ]; then
         sudo apt update
         sudo apt install tlp tlp-rdw -y
         sudo systemctl enable tlp.service
+        sudo tlp start
     fi    
 fi
 
