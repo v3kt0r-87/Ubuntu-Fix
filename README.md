@@ -6,4 +6,4 @@
 
 # Script installs the following :
 
-**FLATPAKS** <br> **AAC Codec : Bluetooth** <br> **Latest GPU Drivers MESA / NVIDIA** <br> **TLP-Service : Laptop ( Battery )** <br> **Cloudflare-Warp : VPN** <br> **Essentail tools / packages**
+**FLATPAKS** <br> **AAC Codec : Bluetooth** <br> **Latest GPU Drivers MESA / NVIDIA** <br> **TLP-Service : Laptop ( Battery )** <br> **Cloudflare-Warp : VPN** <br> **Essentail tools / packages** <br> **MS Office fonts**
