@@ -13,6 +13,11 @@ sudo dpkg --add-architecture i386
 sudo add-apt-repository ppa:aglasgall/pipewire-extra-bt-codecs
 sudo apt update && sudo apt upgrade -y
 
+# Install Kernel Manager
+sudo add-apt-repository ppa:cappelikan/ppa
+sudo apt update && sudo apt install mainline -y
+
+
 clear
 
 # Prompt user for GPU driver preference
@@ -44,8 +49,10 @@ fi
 
 clear
 
-# Update Snap packages
+# Update Snap packages and remmove some snaps
 sudo snap refresh
+sudo snap remove --purge snap-store
+sudo snap remove --purge firefox
 
 # Install Flatpak
 sudo add-apt-repository ppa:flatpak/stable
@@ -60,6 +67,9 @@ sudo apt install -y git
 
 clear
 
+# Install flatpak apps
+flatpak install com.github.tchx84.Flatseal org.videolan.VLC org.mozilla.firefox onlyoffice org.gnome.Extensions io.github.peazip.PeaZip org.telegram.desktop vesktop bottles com.valvesoftware.Steam com.dec05eba.gpu_screen_recorder
+
 # Optional: Install TLP if the device is a laptop
 if [ "$device_type" == "laptop" ]; then
     read -p "Do you want to install TLP Service (y/n) : " install_tlp
@@ -71,7 +81,7 @@ if [ "$device_type" == "laptop" ]; then
         sudo apt install tlp tlp-rdw -y
         sudo systemctl enable tlp.service
         sudo tlp start
-    fi    
+    fi
 fi
 
 clear
@@ -79,7 +89,7 @@ clear
 # Install essential packages
 sudo apt update
 sudo apt install xfsprogs exfatprogs f2fs-tools gparted gcc g++ build-essential stacer cmatrix htop lm-sensors net-tools mesa-utils openssh-server curl bison flex patchelf \
-python3 python-is-python3 python3-pip python3-mako zip patchelf meson gamemode cabextract ttf-mscorefonts-installer -y 
+python3 python-is-python3 python3-pip python3-mako zip patchelf meson gamemode cabextract ttf-mscorefonts-installer gnome-browser-connector -y 
 
 # Optional: Install Cloudflare Warp
 clear
@@ -91,6 +101,10 @@ if [ "$install_warp" == "y" ]; then
     echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflare-client.list
     sudo apt-get update && sudo apt install cloudflare-warp -y
 fi
+
+# Cleanup
+sudo apt autoremove --purge -y
+sudo apt autoclean
 
 # Finish: Notify and reboot
 clear
