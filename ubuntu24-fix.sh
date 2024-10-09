@@ -17,7 +17,6 @@ sudo apt update && sudo apt upgrade -y
 sudo add-apt-repository ppa:cappelikan/ppa
 sudo apt update && sudo apt install mainline -y
 
-
 clear
 
 # Prompt user for GPU driver preference
@@ -50,9 +49,9 @@ fi
 clear
 
 # Update Snap packages and remmove some snaps
-sudo snap refresh
 sudo snap remove --purge snap-store
 sudo snap remove --purge firefox
+sudo snap refresh
 
 # Install Flatpak
 sudo add-apt-repository ppa:flatpak/stable
@@ -89,7 +88,7 @@ clear
 # Install essential packages
 sudo apt update
 sudo apt install xfsprogs exfatprogs f2fs-tools gparted gcc g++ build-essential stacer cmatrix htop lm-sensors net-tools mesa-utils openssh-server curl bison flex patchelf \
-python3 python-is-python3 python3-pip python3-mako zip patchelf meson gamemode cabextract ttf-mscorefonts-installer gnome-browser-connector -y 
+python3 python-is-python3 python3-pip python3-mako zip patchelf meson gamemode cabextract ttf-mscorefonts-installer gnome-browser-connector zram-tools -y 
 
 # Optional: Install Cloudflare Warp
 clear
