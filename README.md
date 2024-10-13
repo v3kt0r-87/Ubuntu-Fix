@@ -6,4 +6,4 @@
 
 # Script installs the following :
 
-**FLATPAKS and Essential Apps** <br> **AAC Codec : Bluetooth** <br> **Latest GPU Drivers MESA / NVIDIA** <br> **TLP-Service : Laptop ( Battery )** <br> **Cloudflare-Warp : VPN** <br> **Essentail tools / packages** <br> **MS Office fonts** <br> **Mainline Kernel-Manager** <br> **Gnome-Browser-Connector** <br> **zram (zram-tools)**
+**FLATPAKS and Essential Apps** <br> **AAC Codec : Bluetooth** <br> **Latest GPU Drivers MESA / NVIDIA** <br> **CoreCtrl** <br> **TLP-Service : Laptop ( Battery )** <br> **Cloudflare-Warp : VPN** <br> **Essentail tools / packages** <br> **MS Office fonts** <br> **Mainline Kernel-Manager** <br> **Gnome-Browser-Connector** <br> **zram (zram-tools)**
