@@ -90,7 +90,7 @@ clear
 # Install essential packages
 sudo apt update
 sudo apt install xfsprogs exfatprogs f2fs-tools gparted gcc g++ build-essential stacer cmatrix htop lm-sensors net-tools mesa-utils openssh-server curl bison flex patchelf \
-python3 python-is-python3 python3-pip python3-mako zip patchelf meson gamemode cabextract ttf-mscorefonts-installer gnome-browser-connector zram-tools corectrl 7zip ubuntu-restricted-extras vlc -y 
+python3 python-is-python3 python3-pip python3-mako zip patchelf meson gamemode cabextract ttf-mscorefonts-installer gnome-browser-connector zram-tools corectrl 7zip ubuntu-restricted-extras libfuse2t64 vlc -y 
 
 # Optional: Install Cloudflare Warp
 clear
