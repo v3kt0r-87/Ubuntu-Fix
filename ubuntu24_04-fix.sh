@@ -67,8 +67,7 @@ sudo apt install -y git
 clear
 
 # Install flatpak apps
-flatpak install com.github.tchx84.Flatseal org.mozilla.firefox onlyoffice org.gnome.Extensions io.github.peazip.PeaZip org.telegram.desktop vesktop bottles com.valvesoftware.Steam com.dec05eba.gpu_screen_recorder
-flatpak install deluge io.github.arunsivaramanneo.GPUViewer localsend
+flatpak install com.github.tchx84.Flatseal org.mozilla.firefox onlyoffice org.gnome.Extensions io.github.peazip.PeaZip org.telegram.desktop com.dec05eba.gpu_screen_recorder localsend
 flatpak update
 
 # Optional: Install TLP if the device is a laptop
@@ -90,7 +89,7 @@ clear
 # Install essential packages
 sudo apt update
 sudo apt install xfsprogs exfatprogs f2fs-tools gparted gcc g++ build-essential stacer cmatrix htop lm-sensors net-tools mesa-utils openssh-server curl bison flex patchelf \
-python3 python-is-python3 python3-pip python3-mako zip patchelf meson gamemode cabextract ttf-mscorefonts-installer gnome-browser-connector zram-tools corectrl 7zip ubuntu-restricted-extras libfuse2t64 vlc -y 
+python3 python-is-python3 python3-pip python3-mako zip patchelf meson gamemode cabextract ttf-mscorefonts-installer gnome-browser-connector zram-tools corectrl 7zip ubuntu-restricted-extras libfuse2t64 vlc deluge -y 
 
 # Optional: Install Cloudflare Warp
 clear
