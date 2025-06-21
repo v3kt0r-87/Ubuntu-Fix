@@ -39,7 +39,7 @@ elif [ "$gpu_driver" == "mesa" ]; then
     echo "Installing the latest Mesa drivers..."
     sudo add-apt-repository ppa:kisak/kisak-mesa 
     sudo apt update && sudo apt upgrade -y
-    sudo apt install -y libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386
+    sudo apt install -y libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386 mesa-opencl-icd ocl-icd-libopencl1 clinfo
 else
     clear
     echo "Invalid choice. Please select either 'nvidia' or 'mesa'."
@@ -89,7 +89,7 @@ clear
 # Install essential packages
 sudo apt update
 sudo apt install xfsprogs btrfs-progs exfatprogs f2fs-tools gparted gcc g++ build-essential stacer cmatrix htop lm-sensors net-tools mesa-utils openssh-server curl bison flex patchelf \
-python3 python-is-python3 python3-pip python3-mako zip patchelf meson gamemode cabextract ttf-mscorefonts-installer gnome-browser-connector zram-tools 7zip ubuntu-restricted-extras libfuse2t64 -y 
+python3 python-is-python3 python3-pip python3-mako zip patchelf ncdu meson gamemode cabextract ttf-mscorefonts-installer gnome-browser-connector zram-tools 7zip ubuntu-restricted-extras libfuse2t64 -y 
 
 # Optional: Install Cloudflare Warp
 clear
