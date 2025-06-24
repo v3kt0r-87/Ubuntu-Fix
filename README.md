@@ -1,4 +1,4 @@
-### This script will fix and improve Ubuntu 24.04 LTS and distros based on it 
+### This script will fix and improve Ubuntu 24.04 LTS
 
 ### How to run Script ? >> RUN >>  ``` bash ubuntu24_04-fix.sh ```
 
