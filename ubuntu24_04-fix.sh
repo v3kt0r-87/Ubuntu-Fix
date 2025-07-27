@@ -79,9 +79,9 @@ fi
 sudo apt install -y \
     xfsprogs btrfs-progs exfatprogs f2fs-tools gparted gcc g++ build-essential stacer \
     cmatrix htop lm-sensors net-tools mesa-utils openssh-server curl bison flex \
-    patchelf python3 python-is-python3 python3-pip python3-mako zip ncdu meson gamemode \
+    patchelf python3 python-is-python3 python3-pip python3-mako zip ncdu meson-1.5 gamemode \
     cabextract ttf-mscorefonts-installer gnome-browser-connector zram-tools \
-    ubuntu-restricted-extras libfuse2t64 p7zip-full
+    ubuntu-restricted-extras libfuse2t64 p7zip-full glslang-tools vulkan-tools
 
 # Flatpak apps
 flatpak install -y flathub \
