@@ -19,6 +19,8 @@ sudo snap refresh
 sudo add-apt-repository -y ppa:aglasgall/pipewire-extra-bt-codecs
 sudo apt update && sudo apt upgrade -y
 
+clear
+
 # Install Xanmod and Kernel Manager and Enable NTSync Module ( Xanmod Kernel )
 
 read -rp "Install Xanmod Kernel ? (y/n): " install_xanmod
@@ -64,9 +66,11 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo apt update && sudo apt install -y git
 
+clear
+
 # Optional: Install TLP for laptops
 if [[ "$device_type" == "laptop" ]]; then
-    read -rp "Do you want to install TLP Service (y/n): " install_tlp
+    read -rp "Do you want to install TLP Service (Battery saver / Thermal - Laptops) (y/n): " install_tlp
     if [[ "$install_tlp" =~ ^[Yy]$ ]]; then
         sudo add-apt-repository -y ppa:linrunner/tlp
         sudo apt update && sudo apt install -y tlp tlp-rdw
@@ -97,6 +101,8 @@ flatpak install -y flathub \
     localsend
 
 flatpak update -y
+
+clear
 
 # Cloudflare Warp
 read -rp "Install Cloudflare Warp? (y/n): " install_warp
