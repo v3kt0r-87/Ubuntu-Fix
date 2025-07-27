@@ -19,7 +19,16 @@ sudo snap refresh
 sudo add-apt-repository -y ppa:aglasgall/pipewire-extra-bt-codecs
 sudo apt update && sudo apt upgrade -y
 
-# Install Kernel Manager
+# Install Xanmod and Kernel Manager and Enable NTSync Module ( Xanmod Kernel )
+
+read -rp "Install Xanmod Kernel ? (y/n): " install_xanmod
+if [[ "$install_xanmod" =~ ^[Yy]$ ]]; then
+    echo ntsync | sudo tee /etc/modules-load.d/ntsync.conf
+    wget -qO - https://dl.xanmod.org/archive.key | sudo gpg --dearmor -vo /etc/apt/keyrings/xanmod-archive-keyring.gpg
+    echo "deb [signed-by=/etc/apt/keyrings/xanmod-archive-keyring.gpg] http://deb.xanmod.org $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/xanmod-release.list
+    sudo apt update && sudo apt install linux-xanmod-edge-x64v3 -y
+fi
+
 sudo add-apt-repository -y ppa:cappelikan/ppa
 sudo apt update && sudo apt install -y mainline
 
