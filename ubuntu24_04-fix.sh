@@ -36,7 +36,7 @@ sudo apt update && sudo apt install -y mainline
 
 clear
 
-read -rp "Which GPU driver to use? (nvidia / mesa): " gpu_driver
+read -rp "Which GPU driver to use? (AMD/Intel (Mesa) | Nvidia): " gpu_driver
 
 if [ "$gpu_driver" == "nvidia" ]; then
     echo "Installing latest NVIDIA drivers..."
