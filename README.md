@@ -1,9 +1,65 @@
-### This script will improve and fix most issues faced in Ubuntu 24.04 LTS
+###  A powerful, all-in-one script to **optimize**, **fix common issues**, and **enhance** your <br> Ubuntu system with essential drivers, apps, and performance tweaks.
 
-# Script installs the following :
+---
 
-**FLATPAKS and Essential Apps** <br> **AAC Codec : Bluetooth** <br> **Latest GPU Drivers ( MESA + OpenCL support ) / NVIDIA** <br> **Latest Xanmod Kernel + NTSYNC (Optional)** <br> **Localsend file sharing** <br> **TLP-Service : Laptop (Optional)** <br> **Cloudflare-Warp : VPN  (Optional)** <br> **Essentail tools / packages** <br> **MS Office fonts** <br> **Mainline Kernel-Manager** <br> **Gnome-Browser-Connector** <br> **zram (zram-tools)**
+## 🚀 What This Script Does
 
-### How to run Script ? >> RUN >>  ``` bash ubuntu24_04-fix.sh ```
+This script automatically installs and configures the following:
 
-### Simply run the script , and wait until its done , REBOOT and ENJOY
+- ✅ **Flatpak + Essential Apps**
+  
+- ✅ **Bluetooth AAC Codec Support**
+  
+- ✅ **Latest GPU Drivers**
+  - Includes **MESA** (with OpenCL support) for AMD/Intel  
+  - Installs **NVIDIA proprietary drivers** if applicable
+  
+- ✅ **Latest Xanmod Kernel + NTSYNC** *(Optional)*
+  
+- ✅ **LocalSend** – Secure, cross-platform file sharing
+  
+- ✅ **TLP Power Management** *(Optional – for laptops)*
+  
+- ✅ **Cloudflare WARP VPN** *(Optional)*
+  
+- ✅ **Essential CLI Tools & Libraries**
+  
+- ✅ **Microsoft Core Fonts** *(e.g., for Office compatibility)*
+  
+- ✅ **Mainline Kernel Manager**
+
+- ✅ **GNOME Browser Connector**
+  
+- ✅ **ZRAM (via zram-tools)** – Improves RAM efficiency
+
+---
+
+## ⚙️ How to Use
+
+1. **Download the script**
+   
+3. Open a terminal in the script's directory
+   
+5. Run the following command:
+
+```bash
+bash ubuntu-fix.sh
+```
+
+4. Sit back and relax. Once the script finishes:
+   
+6. **Reboot your system**
+   
+8. ✅ Enjoy your optimized Ubuntu experience!
+
+---
+
+## 💡 Notes
+
+- Internet connection required during installation
+  
+- Some options like Xanmod kernel, WARP VPN, and TLP are optional – the script will prompt you
+  
+- Designed specifically for **Ubuntu 24.04 LTS** and above
+
+---
