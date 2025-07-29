@@ -40,17 +40,17 @@ This script automatically installs and configures the following:
    
 3. Open a terminal in the script's directory
    
-5. Run the following command:
+5. Run the following command with sudo :
 
 ```bash
-bash ubuntu-fix.sh
+sudo bash ubuntu-fix.sh
 ```
 
 4. Sit back and relax. Once the script finishes:
    
 6. **Reboot your system**
    
-8. ✅ Enjoy your optimized Ubuntu experience!
+8. Enjoy your optimized Ubuntu experience!
 
 ---
 
