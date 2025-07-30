@@ -38,10 +38,10 @@ if [[ "$install_xanmod" =~ ^[Yy]$ ]]; then
     wget -qO - https://dl.xanmod.org/archive.key | sudo gpg --dearmor -o /etc/apt/keyrings/xanmod-archive-keyring.gpg >/dev/null
     echo "deb [signed-by=/etc/apt/keyrings/xanmod-archive-keyring.gpg] http://deb.xanmod.org $(lsb_release -sc) main" | \
         sudo tee /etc/apt/sources.list.d/xanmod-release.list >/dev/null
-
+        
     echo "Installing Xanmod Kernel..."
     sleep 2
-    sudo apt update >/dev/null 2>&1 && sudo apt install -y linux-xanmod-edge-x64v3 >/dev/null 2>&1
+    sudo apt update >/dev/null 2>&1 && sudo apt install -y linux-xanmod-edge-x64v3 dkms libdw-dev lld >/dev/null 2>&1
 fi
 
 clear
