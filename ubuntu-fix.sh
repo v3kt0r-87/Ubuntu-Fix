@@ -111,7 +111,13 @@ sudo apt install -y \
     cmatrix htop lm-sensors net-tools mesa-utils openssh-server curl bison flex \
     patchelf python3 python-is-python3 python3-pip python3-mako zip ncdu meson-1.5 gamemode \
     cabextract ttf-mscorefonts-installer gnome-browser-connector zram-tools \
-    ubuntu-restricted-extras libfuse2t64 p7zip-full glslang-tools vulkan-tools >/dev/null 2>&1
+    ubuntu-restricted-extras libfuse2t64 p7zip-full glslang-tools vulkan-tools util-linux util-linux-extra >/dev/null 2>&1
+
+clear
+echo "Setting the RTC (hardware clock) to local time"
+sudo timedatectl set-local-rtc 1 --adjust-system-clock
+sudo timedatectl set-ntp true
+sudo hwclock --systohc 
 
 clear
 echo "Installing Flatpak apps..."
