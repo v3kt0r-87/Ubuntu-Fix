@@ -51,7 +51,7 @@ sudo add-apt-repository -y ppa:cappelikan/ppa >/dev/null 2>&1
 sudo apt update >/dev/null 2>&1 && sudo apt install -y mainline >/dev/null 2>&1
 
 clear
-read -rp "Which GPU driver to use? (mesa / nvidia): " gpu_driver
+read -rp "Which GPU driver to use? (Mesa (AMD and Intel) / Nvidia (GTX 10 series and above ...)): " gpu_driver
 if [[ "$gpu_driver" == "nvidia" ]]; then
     clear
     echo "Installing latest NVIDIA drivers..."
