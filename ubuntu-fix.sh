@@ -126,7 +126,7 @@ flatpak install -y flathub \
     com.github.tchx84.Flatseal \
     org.videolan.VLC \
     deluge \
-    org.mozilla.firefox \
+    com.brave.Browser \
     onlyoffice \
     org.gnome.Extensions \
     io.github.peazip.PeaZip \
