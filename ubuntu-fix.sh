@@ -57,7 +57,7 @@ if [[ "$gpu_driver" == "nvidia" ]]; then
     echo "Installing latest NVIDIA drivers..."
     sleep 2
     sudo add-apt-repository -y ppa:graphics-drivers/ppa
-    sudo apt update && sudo apt install -y nvidia-driver-575 libvulkan1 libvulkan1:i386
+    sudo apt update && sudo apt install -y nvidia-driver-580 libvulkan1 libvulkan1:i386
 elif [[ "$gpu_driver" == "mesa" ]]; then
     clear
     echo "🎮 Installing latest Mesa drivers (AMD/Intel)..."
