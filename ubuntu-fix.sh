@@ -111,7 +111,7 @@ sudo apt install -y \
     cmatrix htop lm-sensors net-tools mesa-utils openssh-server curl bison flex \
     patchelf python3 python-is-python3 python3-pip python3-mako zip ncdu meson-1.5 gamemode \
     cabextract ttf-mscorefonts-installer gnome-browser-connector zram-tools \
-    ubuntu-restricted-extras libfuse2t64 p7zip-full glslang-tools vulkan-tools util-linux util-linux-extra google-android-platform-tools-installer
+    ubuntu-restricted-extras libfuse2t64 p7zip-full glslang-tools vulkan-tools util-linux util-linux-extra google-android-platform-tools-installer vlc
 
 clear
 echo "Setting the RTC (hardware clock) to local time"
@@ -124,7 +124,6 @@ echo "Installing Flatpak apps..."
 sleep 2
 flatpak install -y flathub \
     com.github.tchx84.Flatseal \
-    org.videolan.VLC \
     deluge \
     com.brave.Browser \
     onlyoffice \
